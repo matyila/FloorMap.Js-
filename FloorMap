@@ -1,0 +1,27 @@
+Floor mapping
+
+/* Floor mapping */
+
+(function(){ 'use strict';
+
+var trunc = {
+    frontEnd: 7,
+    side: function(){
+        var shape = 6;
+        return shape;  
+    },
+    region: "left",
+    flat: function(){
+        console.log(" side combined");
+            return this.region + " merge"; 
+                },
+    base: function(){ return this.side() + (this.frontEnd * 2);
+    },
+};
+    _truncade(trunc.base()); 
+//truncade floor measurement
+function _truncade($floor){
+    console.log($floor + " trunc floor"); 
+        //return output
+};
+}());
